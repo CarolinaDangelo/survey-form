@@ -1,6 +1,6 @@
 # freeCodeCamp survey-form
 
-<img src="">
+<img src="https://github.com/CarolinaDangelo/survey-form/blob/2c160559f9ac716950b003c92e70978d8ed0cd00/img/captura.jpg">
 freeCodeCamp Proyecto Encuesta para certificación
 
 # Objetivos
