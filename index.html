@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <!-- Nombre -->
+            <div class="seccion">
+                <label for="name" id="name-label">
+                    <p class="form-item">Name</p>
+                <input type="text" id="name" class="input-format" placeholder="Enter your Name" required>
+                </label>
+            </div>
+            <!-- Email -->
+            <div class="seccion">
+                <label for="email" id="email-label">
+                    <p class="form-item">Email</p>
+                <input type="email" id="email" class="input-format" placeholder="Enter your Email" required>
+                </label>
+            </div>
+            <!-- Edad -->
+            <div class="seccion">
+                <label for="number" id="number-label">
+                    <p class="form-item">Age <span class="form-par">(optional)</span></p>
+                <input type="number" id="number" min="10" max="99" class="input-format" placeholder="99" value="edad">
+                </label>
+            </div>
+            <!-- Select -->
+            <div class="seccion">
+                <p class="form-item">Which option best describes your current role?</p>
+                <label for="dropdown">
+                    <select id="dropdown" value="Select" name="select" class="input-format">
+                        <option value="" disabled selected>Select current role</option>
+                        <option value="Student">Student</option>
+                        <option value="Full Time Job">Full Time Job</option>
+                        <option value="Full Time Learner">Full Time Learner</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+            </div>
+            <!-- Buttons RADIO -->
+            <div class="seccion">
+                <fieldset>
+                    <legend class="form-item">Would you recommend freeCodeCamp to a friend?</legend>
+                    <label for="definitely" class="radio">
+                        <input type="radio" name="recommend" value="Definitivamente" id="definitely" checked>
+                        <p class="form-item">Definitely</p>
+                    </label>
+                    <label for="maybe" class="radio">
+                        <input type="radio" name="recommend" value="Quizas" id="maybe">
+                        <p class="form-item">Maybe</p>
+                    </label>
+                    <label for="not-sure" class="radio">
+                        <input type="radio" name="recommend" value="No estoy seguro" id="not-sure">
+                        <p class="form-item">Not Sure</p>
+                    </label>
+                </fieldset>
+            </div>
+            <!-- Select 2 -->
+            <div class="seccion">
+                <p class="form-item">What is your favorite feature of freeCodeCamp?</p>
+                <label for="dropdown-two">
+                    <select id="dropdown-two" value="Select two" name="select two" class="input-format">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Challenges">Challenges</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Community">Community</option>
+                        <option value="Open Source">Open Source</option>
+                    </select>
+                </label>
+            </div>
+            <!-- Checkboxs -->
+            <div class="seccion">
+                <fieldset>
+                    <legend class="form-item">
+                        What would you like to see improved? <span class="form-par">(Check all that apply) </span>
+                    </legend>
+                    <label for="front-end" class="check">
+                        <input type="checkbox" id="front-end" value="Front" name="Checkboxs">
+                        <p class="form-item">Front-end Projects</p>
+                    </label>
+                    <label for="back-end" class="check">
+                        <input type="checkbox" id="back-end" value="Checkboxs">
+                        <p class="form-item">Back-end Projects</p>
+                    </label>                    
+                    <label for="data-visualization" class="check">
+                        <input type="checkbox" id="data-visualization" value="Checkboxs">
+                        <p class="form-item">Data Visualization</p>
+                    </label>
+                    <label for="challenges" class="check">
+                        <input type="checkbox" id="challenges" value="Checkboxs">
+                        <p class="form-item">Challenges</p>
+                    </label>
+                    <label for="open-source-community" class="check">
+                        <input type="checkbox" id="open-source-community" value="Checkboxs">
+                        <p class="form-item">Open Source Community</p>
+                    </label>
+                    <label for="gitter-help-rooms" class="check">
+                        <input type="checkbox" id="gitter-help-rooms" value="Checkboxs">
+                        <p class="form-item">Gitter help rooms</p>
+                    </label>
+                    <label for="videos" class="check">
+                        <input type="checkbox" id="videos" value="Checkboxs">
+                        <p class="form-item">Videos</p>
+                    </label>
+                    <label for="city-meetups" class="check">
+                        <input type="checkbox" id="city-meetups" value="Checkboxs">
+                        <p class="form-item">City Meetups</p>
+                    </label>
+                    <label for="wiki" class="check">
+                        <input type="checkbox" id="wiki" value="Checkboxs">
+                        <p class="form-item">Wiki</p>
+                    </label>
+                    <label for="forum" class="check">
+                        <input type="checkbox" id="forum" value="Checkboxs">
+                        <p class="form-item">Forum</p>
+                    </label>
+                    <label for="additional-courses" class="check">
+                        <input type="checkbox" id="additional-courses" value="Checkboxs">
+                        <p class="form-item">Additional Courses</p>
+                    </label>
+                </fieldset>
+            </div>
+            <!-- TEXTAREA Comments -->
+            <div class="seccion">
+                <p class="form-item">Any comments or suggestions?</p>
+                <label for="textarea">
+                    <textarea type="text" name="comments" id="textarea" class="input-format" 
+                    placeholder="Enter your comment here..."></textarea>
+                </label>
+            </div>
+            <!-- Submit -->
+            <div class="seccion">
+                <label for="submit">
+                    <input type="submit" id="submit" value="Submit">
+                </label>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
